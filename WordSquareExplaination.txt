@@ -1,0 +1,5 @@
+The first idea that comes to mind after looking at the problem statement is that we need to look for PREFIXES! 
+We know that Trie would be the perfect data structure to use when it comes to dealing with prefixes but I solved it using HashMaps and it's one of the simpler data structures. 
+So, I first find all possible prefixes and store in the hashmap. 
+Next, for every possible word I check if is eligible to begin a square. 
+If yes, I start building my square, and backtrack to find all possible options that could make the square complete!
