@@ -1,0 +1,5 @@
+There are several ways to solve this problem. 
+1. You can solve it using recursion with memoization. We can find all possible words belonging in the dictionary, and then recurse over the remainder of the string to do the same until the string is complete. We can use a memo to ensure we don't avoid visiting redundant subproblems. 
+2. Another easier way of doing it would be performing a bfs. 
+It's probably not the most intuitive approach. But the way I think of it is - imagine each word as a component(node). So the string comprises of various nodes. Now the words(nodes) present in the dictionary are the valid ones. So we need to find if the nodes are connected. Hence, bfs! 
+So we have a queue which basically stores the indexes that marks the end of word. So in order to be a connected graph, the index after the the index that marks the end of a word, should begin a word so that it is a valid node(present in the dictionary). We can end when we have reached the end of the input string!
